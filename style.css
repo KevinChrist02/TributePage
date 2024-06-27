@@ -7,6 +7,8 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, violet, yellow);
 }
 
 #main {
@@ -18,12 +20,28 @@ body {
 
 #title {
   font-size: 20vh;
+  font-weight: bold;
   grid-area: 1 / span 3;
+  padding-bottom: 10vh;
 }
 
 #img-div {
   grid-area: 2 / 1;
 }
+#img-div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+#img-caption {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 #tribute {
   grid-area: 2 / span 3;
+  font-size: 3vh;
 }
