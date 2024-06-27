@@ -1,1 +1,29 @@
+* {
+  font-family: Helvetica, sans-serif;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#main {
+  display: grid;
+  grid-template: 20% 1fr 1fr / 1fr 1fr 1fr;
+  align-items: center;
+  margin: 10vh;
+}
+
+#title {
+  font-size: 20vh;
+  grid-area: 1 / span 3;
+}
+
+#img-div {
+  grid-area: 2 / 1;
+}
+#tribute {
+  grid-area: 2 / span 3;
+}
